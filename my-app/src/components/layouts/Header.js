@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="header p-5 bg-white shadow-md flex items-center justify-between px-10 py-0 sticky">
+    <header className="header p-5 bg-white shadow-md flex items-center justify-between md:px-10 px-0 py-0 sticky">
       <div className="header--logo">
         <NavLink to="/">
           {" "}
@@ -45,8 +45,8 @@ const Header = () => {
           to="/About"
           className={({ isActive }) =>
             isActive
-              ? "rounded-lg px-3 py-2 text-white font-medium hover:bg-cyan-600 bg-cyan-300"
-              : "rounded-lg px-3 py-2 text-slate-500 font-medium hover:bg-slate-100 hover:text-slate-900"
+              ? "rounded-lg px-3 py-2 text-white font-medium hover:bg-cyan-600 bg-cyan-300 whitespace-nowrap"
+              : "rounded-lg px-3 py-2 text-slate-500 font-medium hover:bg-slate-100 hover:text-slate-900 whitespace-nowrap"
           }
         >
           About us
